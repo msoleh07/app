@@ -19,7 +19,7 @@
   height: calc(100vh - 160px);
   max-height: 100%;
   overflow-y: auto;
-  padding: 2%;
+  padding: 0 1.3px;
 
   background: #f7f7f8;
 }

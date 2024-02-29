@@ -11,3 +11,8 @@
   overflow: hidden;
   margin: 0 auto;
 }
+
+button,
+svg {
+  cursor: pointer;
+}
