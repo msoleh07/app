@@ -12,7 +12,7 @@ const Exercise = () => {
           initial={{ x: "80vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
-            delay: 0.8,
+            delay: 0.3,
             duration: 0.8,
             type: "spring",
             stiffness: 80,

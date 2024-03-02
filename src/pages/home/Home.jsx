@@ -98,7 +98,7 @@ const Home = () => {
               initial="hidden"
               animate="visable"
             >
-              Cilick
+              App Info
             </motion.button>
           </div>
         </motion.div>
