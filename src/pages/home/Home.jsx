@@ -83,7 +83,7 @@ const Home = () => {
           </motion.div>
           <div className="buttons_container">
             <motion.button
-              onClick={() => navigate("/exercise")}
+              onClick={() => navigate("/unit ")}
               className="start"
               variants={buttonOneVariants}
               initial="hidden"
