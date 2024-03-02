@@ -19,7 +19,8 @@
   height: calc(100vh - 160px);
   max-height: 100%;
   overflow-y: auto;
-  padding: 0 1.3px;
-
-  background: #f7f7f8;
+  /* background: rgb(216, 241, 247); */
+  border: 0.5px solid #cfcef8;
+  border-top: none;
+  border-bottom: none;
 }

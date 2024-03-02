@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Home from "./pages/home/Home";
+import Exercise from "./pages/exercise/Exercise";
 
 const Router = () => {
   return (
@@ -9,7 +10,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/rout" element={<h1>rout</h1>} />
+          <Route path="/exercise" element={<Exercise />} />
         </Route>
       </Routes>
     </div>
