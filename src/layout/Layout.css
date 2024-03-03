@@ -1,6 +1,6 @@
 .layout_page {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,10 +17,7 @@
 .main_container {
   width: 100%;
   height: calc(100vh - 160px);
-  max-height: 100%;
   overflow-y: auto;
-  /* background: rgb(216, 241, 247); */
   border: 0.5px solid #cfcef8;
   border-top: none;
-  border-bottom: none;
 }

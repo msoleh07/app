@@ -90,7 +90,7 @@ const Home = () => {
           </motion.div>
           <div className="buttons_container">
             <motion.button
-              onClick={() => navigate("/exercise")}
+              onClick={() => navigate("/unit ")}
               className="start"
               variants={buttonOneVariants}
               initial="hidden"
@@ -105,7 +105,7 @@ const Home = () => {
               initial="hidden"
               animate="visable"
             >
-              Cilick
+              App Info
             </motion.button>
           </div>
         </motion.div>
