@@ -1,10 +1,8 @@
-
 import React, { memo } from "react";
 import "./Home.css";
 import book from "../../assets/book-removebg-preview (1).png";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
 
 const homeContainerTextVariants = {
   hidden: {
@@ -64,12 +62,7 @@ const buttonTwoVariants = {
   },
 };
 
-
 const Home = () => {
-
-  
-
-
   let navigate = useNavigate();
   return (
     <div className="home_page">
@@ -109,10 +102,6 @@ const Home = () => {
             </motion.button>
           </div>
         </motion.div>
-       
-       
-        
-
       </div>
     </div>
   );

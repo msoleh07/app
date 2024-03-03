@@ -2,41 +2,40 @@ import React, { memo, useEffect, useState } from "react";
 import "./DragAndDrop.css";
 import dragData from "../../static/drag";
 
-// --------------------------------------------------------------------------------
-
-const randomizeDragData = () => {
-  const keys = Object.keys(dragData);
-  const randomKey = keys[Math.floor(Math.random() * keys.length)];
-  const randomDragData = { [randomKey]: dragData[randomKey] };
-
-  const randomizedData = {};
-  Object.keys(randomDragData).forEach((key) => {
-    randomizedData[key] = {
-      start: shuffleArray(randomDragData[key].start),
-      and: shuffleArray(randomDragData[key].and),
-    };
-  });
-
-  return randomizedData;
-};
-
-const shuffleArray = (array) => {
-  const shuffledArray = [...array];
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
-
-// --------------------------------------------------------------------------------
-
 const DragAndDrop = () => {
-  const [randomizedData, setRandomizedData] = useState(randomizeDragData());
+  const [dragDataItem, setDragDataItem] = useState(null);
 
-  const handleRandomize = () => {
-    setRandomizedData(randomizeDragData());
+  useEffect(() => {
+    // Randomize data when component mounts
+    randomizeData();
+  }, []);
+
+  const randomizeData = () => {
+    // Copy the initial data to avoid mutations
+    const newData = { ...dragData };
+
+    // Shuffle each start and and array
+    Object.keys(newData).map((key) => {
+      newData[key].start = shuffleArray(newData[key].start);
+      newData[key].and = shuffleArray(newData[key].and);
+    });
+
+    setDragDataItem(newData);
   };
+
+  const shuffleArray = (array) => {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [
+        shuffledArray[j],
+        shuffledArray[i],
+        console.log("i =>", i, "j =>", j),
+      ];
+    }
+    return shuffledArray;
+  };
+  //   console.log(dragDataItem);
 
   return (
     <div className="drag_page">
@@ -44,25 +43,22 @@ const DragAndDrop = () => {
         <div className="drag_container">
           <div className="drop_cards">
             <div className="drop_header">
-              <h2>Matching</h2>
-              <button onClick={handleRandomize}>Randomize</button>
+              <h2>title</h2>
             </div>
-
-            {randomizedData &&
-              Object.keys(randomizedData).map((key) => (
-                <div className="matching_container" key={key}>
-                  <ul className="start">
-                    {randomizedData[key].start.map((item, index) => (
-                      <li key={index}>{item.title}</li>
-                    ))}
-                  </ul>
-                  <ul className="and">
-                    {randomizedData[key].and.map((item, index) => (
-                      <li key={index}>{item.title}</li>
-                    ))}
-                  </ul>
-                </div>
+            <div className="drop_text_container">
+              {dragData?.dragOne?.start?.map((item, inx) => (
+                <ul key={inx}>
+                  <li>{item?.title}</li>
+                </ul>
               ))}
+            </div>
+            <div className="drop_text_container">
+              {dragData?.dragOne?.and?.map((item, inx) => (
+                <ul key={inx}>
+                  <li>{item?.title}</li>
+                </ul>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@
   height: 30%;
 }
 
-button {
+.buttons_container button {
   width: 140px;
   height: 50px;
   display: flex;
@@ -51,16 +51,16 @@ button {
     0 60px 20px -12px rgba(0, 0, 0, 0.1);
 }
 
-button.start {
+.buttons_container button.start {
   border: 1px solid #c3cff5;
   background: #9aa3be;
   color: #fff;
 }
 
-button.start:hover {
+.buttons_container button.start:hover {
   background: #a5aec9;
 }
 
-button.btn_next:hover {
+.buttons_container button.btn_next:hover {
   background: #ced7f5;
 }
