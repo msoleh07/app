@@ -15,10 +15,6 @@ const Learn = () => {
 
   const play = (sound) => {
     new Audio(sound).play()
-
-    const randomIndex = Math.floor(Math.random() * texts.length);
-    const randomData = texts[randomIndex];
-    setText(randomData);
   }
     
   return (
