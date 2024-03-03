@@ -1,0 +1,91 @@
+.drag_page {
+  width: 100%;
+  height: calc(100vh - 161px);
+}
+
+.drag_container {
+  width: 100%;
+  height: calc(100vh - 161px);
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 2%;
+}
+
+.drop_cards {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #d6def7, -3px -3px 5px #e7ebf7;
+}
+
+.drop_header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #d6def7, -3px -3px 5px #e7ebf7;
+}
+
+.drop_header h2 {
+  font-size: 27px;
+  letter-spacing: 1.5px;
+}
+
+.matching_container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #d6def7, -3px -3px 5px #e7ebf7;
+}
+
+.start {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.start li {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #d6def7, -3px -3px 5px #e7ebf7;
+}
+
+.and {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.and li {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #d6def7, -3px -3px 5px #e7ebf7;
+}

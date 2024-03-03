@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import "./Units.css";
 import { unitsData } from "../../static/units";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Units = () => {
   return (
@@ -33,7 +34,9 @@ const Units = () => {
                 <div className="circle">
                   <b>{inx + 1}</b>
                 </div>
-                <div className="unit_text">{item?.title}</div>
+                <Link to={item?.link} className="unit_text">
+                  {item?.title}
+                </Link>
               </motion.li>
             ))}
           </ul>
