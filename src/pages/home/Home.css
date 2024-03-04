@@ -24,7 +24,8 @@
   height: 30%;
 }
 
-button {
+.btn_next,
+.start {
   width: 140px;
   height: 50px;
   display: flex;
@@ -40,12 +41,10 @@ button {
   background: #c3cff5;
   border: 1px solid #c3cff5;
   transition: 0.3s;
-  background-image: linear-gradient(
-    top,
-    #ffffff1c 1px,
-    #ffffff00 1px,
-    #0000001a 100%
-  );
+  background-image: linear-gradient(top,
+      #ffffff1c 1px,
+      #ffffff00 1px,
+      #0000001a 100%);
 
   box-shadow: 0 60px 12px -18px rgba(0, 0, 0, 0.1),
     0 60px 20px -12px rgba(0, 0, 0, 0.1);

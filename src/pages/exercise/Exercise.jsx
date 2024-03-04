@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import "./Exercise.css";
 import { motion } from "framer-motion";
 import { exerciseData } from "../../static/exercise";
+import { Link } from "react-router-dom";
 
 const Exercise = () => {
   return (
@@ -21,6 +22,8 @@ const Exercise = () => {
           <div className="exercise_ul_container">
             <ul>
               {exerciseData?.map((item, inx) => (
+                <Link to={`${item.link}`}>
+                
                 <motion.li
                   key={inx}
                   initial={{ x: "100vw", opacity: 0 }}
@@ -36,6 +39,7 @@ const Exercise = () => {
                   </span>
                   <p>{item?.title}</p>
                 </motion.li>
+                </Link>
               ))}
             </ul>
           </div>

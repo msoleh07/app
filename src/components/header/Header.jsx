@@ -54,9 +54,7 @@ const Header = () => {
               initial="hidden"
               animate="visable"
             >
-              {pathname === "/exercise"
-                ? " Welcome to practice"
-                : "Welcome to app"}
+              {pathname === "/unit" ? " Welcome to practice" : "Welcome to app"}
             </motion.span>
           </motion.div>
         </div>
