@@ -1,45 +1,31 @@
 import React, { memo } from "react";
 import "./Units.css";
-import { unitsData } from "../../static/units";
-import { motion } from "framer-motion";
-import { useDispatch } from 'react-redux'
-
+import { useNavigate } from 'react-router-dom'
 const Units = () => {
-  const dispatch = useDispatch()
+  const navigate = useNavigate()
   return (
     <div className="units_page">
       <div className="container">
-        <motion.div
-          className="units_container"
-          initial={{ x: "80vw", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            type: "spring",
-            stiffness: 80,
-          }}
-        >
-          <ul>
-            {unitsData?.map((item, inx) => (
-              <motion.li
-                key={inx}
-                initial={{ x: "100vw", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.7,
-                  duration: 0.7,
-                  times: 0.1,
-                }}
-              >
-                <div className="circle">
-                  <b>{inx + 1}</b>
-                </div>
-                <div className="unit_text">{item?.title}</div>
-              </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+        <div className='unit_exercise' onClick={() => navigate('/unitexercise')}>
+          <b className='unit_exercise_number'>1</b>
+          <b className='unit_exercise_title'>Fisrt Theme</b>
+        </div>
+        <div className='unit_exercise'>
+          <b className='unit_exercise_number'>2</b>
+          <b className='unit_exercise_title'>Second Theme</b>
+        </div>
+        <div className='unit_exercise'>
+          <b className='unit_exercise_number'>3</b>
+          <b className='unit_exercise_title'>Third Theme</b>
+        </div>
+        <div className='unit_exercise'>
+          <b className='unit_exercise_number'>4</b>
+          <b className='unit_exercise_title'>Fourth Theme</b>
+        </div>
+        <div className='unit_exercise'>
+          <b className='unit_exercise_number'>5</b>
+          <b className='unit_exercise_title'>Fifth Theme</b>
+        </div>
       </div>
     </div>
   );
