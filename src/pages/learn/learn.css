@@ -3,9 +3,14 @@
     width: 100%;
     height: 70vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.learn_words {
+    font-size: 30px;
+    text-align: center;
 }
 
 .text_list .play_voice {

@@ -9,7 +9,7 @@ const UnitExercise = () => {
                 <b className='unit_exercise_number'>1</b>
                 <b className='unit_exercise_title'>Learn the meaning</b>
             </div>
-            <div className='unit_exercise'>
+            <div className='unit_exercise' onClick={() => navigate('/matchingwords')}>
                 <b className='unit_exercise_number'>2</b>
                 <b className='unit_exercise_title'>Matching words</b>
             </div>

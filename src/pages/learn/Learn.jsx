@@ -19,9 +19,9 @@ const Learn = () => {
   return (
     <div>
       <div className='text_lists'>
-        <h1 >{text.en}</h1>
+        <h1 className='learn_words' >{text.en}</h1>
         <GiSpeaker className='play_voice' onClick={() => play(text.voice)} />
-        <h1 >{text.uz}</h1>
+        <h1 className='learn_words' >{text.uz}</h1>
         <button className='text_lists_btn' onClick={() => handlerandom()}>
           <FaRandom />
         </button>

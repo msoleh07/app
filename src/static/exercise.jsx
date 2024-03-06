@@ -22,7 +22,7 @@ export const exerciseData = [
   },
   {
     title: "Read and match",
-    link: "/",
+    link: "/drag",
     id: 1,
   },
   {
@@ -65,79 +65,94 @@ export const exerciseData = [
 
 export  const texts = [
   {
+    id:1,
     en: "Friendly",
     uz: "do’stona",
-    voice: friendly
+    voice: friendly,
   },
   {
+    id:2,
     en: "Popular",
     uz: "mashhur",
-    voice: popular
+    voice: popular,
   },
-  {
+  { 
+    id:3,
     en: "Funny",
     uz: "kulgili, quvnoq",
-    voice: funny
+    voice: funny,
   },
   {
+    id:4,
     en: "Lazy",
     uz: "dangasa",
-    voice: lazy
+    voice: lazy,
   },
-  {
+  { 
+    id:5,
     en: "Polite",
     uz: "xushmuomala",
-    voice: polite
+    voice: polite,
   },
   {
+    id:6,
     en: "Active",
     uz: "faol",
-    voice: active
+    voice: active,
   },
-  {
+  { 
+    id:7,
     en: "Helpful ",
     uz: "yordamchi, yordam beradigan",
-    voice: helpfull
+    voice: helpfull,
   },
-  {
+  { 
+    id:8,
     en: "Kind ",
     uz: "mehribon",
-    voice: kind
+    voice: kind,
   },
-  {
+  { 
+    id:9,
     en: "Creative",
     uz: "yaratuvchan",
-    voice: creative
+    voice: creative,
   },
-  {
+  { 
+    id:10,
     en: "Quiet",
     uz: "jim, kamgap",
-    voice: quiet
+    voice: quiet,
   },
   {
+    id:11,
     en: "Volunteering",
     uz: "ko’ngilli(bepul) ishlash",
-    voice: volunteering
+    voice: volunteering,
   },
   {
+    id:12,
     en: "Skill ",
-    uz: "mahurat",
-    voice: skill
+    uz: "mahorat",
+    voice: skill,
   },
   {
+    id:13,
     en: "Award",
     uz: "mukofot",
-    voice: award
+    voice: award,
   },
   {
+    id:14,
     en: "Expedition",
     uz: "tadqiqot",
-    voice: expedetion
+    voice: expedetion,
   },
   {
+    id:15,
     en: "Fitness",
-    uz: "mukosog’lomlikfot",
-    voice: fitness
+    uz: "sog’lomlik",
+    voice: fitness,
   },
 ]
  
