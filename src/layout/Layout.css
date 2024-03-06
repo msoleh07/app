@@ -1,23 +1,21 @@
 .layout_page {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1px 0;
 }
 
 .main_layout {
   width: 100%;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 80px);
   overflow: hidden;
 }
 
 .main_container {
   width: 100%;
-  height: calc(100vh - 160px);
-  overflow-y: auto;
+  height: 100%;
   border: 0.5px solid #cfcef8;
   border-top: none;
 }

@@ -6,6 +6,7 @@ import Exercise from "./pages/exercise/Exercise";
 import Learn from "./pages/learn/Learn";
 import Units from "./pages/units/Units";
 import DragAndDrop from "./pages/dragAndDrop/DragAndDrop";
+import UnitExercise from "./pages/unitexercise/UnitExercise";
 
 const Router = () => {
   return (
@@ -15,8 +16,9 @@ const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="/exercise" element={<Exercise />} />
           <Route path="/learntext" element={<Learn />} />
-          <Route path="/unit" element={<Units />} />
           <Route path="/drag" element={<DragAndDrop />} />
+          <Route path="/units" element={<Units />} />
+          <Route path="/unitexercise" element={<UnitExercise />} />
         </Route>
       </Routes>
     </div>

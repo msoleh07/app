@@ -1,7 +1,7 @@
 export let unitsData = [
   {
     title: "Unit",
-    link: "/drag",
+    link: "/",
     id: 0,
   },
   {

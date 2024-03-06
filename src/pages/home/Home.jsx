@@ -62,6 +62,7 @@ const buttonTwoVariants = {
   },
 };
 
+
 const Home = () => {
   let navigate = useNavigate();
   return (
@@ -83,7 +84,7 @@ const Home = () => {
           </motion.div>
           <div className="buttons_container">
             <motion.button
-              onClick={() => navigate("/unit ")}
+              onClick={() => navigate("/units")}
               className="start"
               variants={buttonOneVariants}
               initial="hidden"
